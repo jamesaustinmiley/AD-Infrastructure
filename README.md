@@ -3,25 +3,25 @@
 </p>
 
 <h1>Preparing AD Infrastructure in Azure (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+This tutorial will detail the creation of two virtual machines. One of the VMs will be running Windows server and the other will be running Windows 11. A domain will be created on the Windows Server VM, which the Windows 11 VM will subsequently join. This will enable the Windows 11 VM to become aware of the other user accounts that are part of the domain and will thus demonstrate Active Directory. Active Directory is Microsoft software that is designed for the management of user accounts and their associated properties, such as passwords and permissions, on a large, centralized scale.<br />
 
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure 
 - Remote Desktop
 - Active Directory Domain Services
 - PowerShell
 
 <h2>Operating Systems Used </h2>
 
-- Windows Server 2022
-- Windows 10 (21H2)
+- Windows Server 2022 Datacenter (Domain Controller)
+- Windows 11 Pro (25H2) (Client)
 
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-
+You will create a Resource Group that will provide the resources for the two VMs that will be created. Next, you will create a Virtual Network that will allow the VMs to communicate with each other, the Internet, and other networks. Now, you are ready to create the two VMs. The first VM will be the Domain Controller and will run on Windows Server 2022 Datacenter, which is designed to provide services to other computers that may join its domain. 
 </p>
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -29,3 +29,5 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <br />
 
+<p>
+The second VM will run on Windows 11 Pro, which is designed for a single user. This VM will join the Domain Controller. 
