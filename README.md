@@ -56,4 +56,29 @@ You will create a Resource Group that will provide the resources for the two VMs
 <br />
 
 <p>
-The second VM will run on Windows 11 Pro, which is designed for a single user. This VM will join the Domain Controller. 
+The second VM (client-1) will run on Windows 11 Pro, which is designed for a single user. This VM will join the Domain Controller. After creating this vm, set its DNS settings to dc-1's Private IP Address. So, whenever client-1 tries to find either a name or an IP address, it will do so through the Domain Controller. Using Remote Desktop, log into Client-1 using its Public IP Address. Open Windows PowerShell. Send a Ping to dc-1's Private IP Address to test the connectivity between the two VMs. Run ipconfig /all to provide a snapshot of client-1's network configuration. One of the things you will see is dc-1's Private IP Address listed with DNS Servers. 
+</p>
+<p>
+<img src="https://imgur.com/FBfC9Nm.png" alt="Client-1"/>
+</p>
+<p>
+<img src="https://imgur.com/Vb9t1oZ.png" alt="Windows 11 Pro"/>
+</p>
+<p>
+<img src="https://imgur.com/fs0L21M.png" alt="Eligible License"/>
+</p>
+<p>
+<img src="https://imgur.com/OWuc5xX.png" alt="Network Interface"/>
+</p>
+<p>
+<img src="https://imgur.com/yPuOzlo.png" alt="Client-1 NIC"/>
+</p>
+<p>
+<img src="https://imgur.com/AFmoWFT.png" alt="DNS Server"/>
+</p>
+<p>
+<img src="https://imgur.com/M00YDWk.png" alt="Ping"/>
+</p>
+<p>
+<img src="https://imgur.com/M9MGT12.png" alt="ipconfig"/>
+</p>
