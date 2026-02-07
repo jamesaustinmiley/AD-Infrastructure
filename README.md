@@ -21,13 +21,29 @@ This tutorial will detail the creation of two virtual machines. One of the VMs w
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-You will create a Resource Group that will provide the resources for the two VMs that will be created. Next, you will create a Virtual Network that will allow the VMs to communicate with each other, the Internet, and other networks. Now, you are ready to create the two VMs. The first VM will be the Domain Controller and will run on Windows Server 2022 Datacenter, which is designed to provide services to other computers that may join its domain. 
+You will create a Resource Group that will provide the resources for the two VMs that will be created. Next, you will create a Virtual Network that will allow the VMs to communicate with each other, the Internet, and other networks. Now, you are ready to create the two VMs. The first VM (dc-1) will be the Domain Controller and will run on Windows Server 2022 Datacenter, which is designed to provide services to other computers that may join its domain. 
 </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/TWUaXK1.png" alt="Resource Group"/>
+</p>
 <p>
-
+<img src="https://imgur.com/UdtWa6Y.png" alt="Virtual Network"/>
+</p>
+<p>
+<img src="https://imgur.com/ckBOmqA.png" alt="dc-1"/>
+</p>
+<p>
+<img src="https://imgur.com/KC1DAuR.png" alt="Windows Server"/>
+</p>
+<p>
+<img src="https://imgur.com/SIfzTti.png" alt="Windows Server License"/>
+</p>
+<p>
+<img src="https://imgur.com/lzLbsIy.png" alt="Networking"/>
+</p>
 <br />
+
+<p>
 
 <p>
 The second VM will run on Windows 11 Pro, which is designed for a single user. This VM will join the Domain Controller. 
