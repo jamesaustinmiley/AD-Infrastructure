@@ -2,8 +2,8 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1>Preparing AD Infrastructure in Azure (Azure)</h1>
-This tutorial will detail the creation of two virtual machines. One of the VMs will be running Windows server and the other will be running Windows 11. A domain will be created on the Windows Server VM, which the Windows 11 VM will subsequently join. This will enable the Windows 11 VM to become aware of the other user accounts that are part of the domain and will thus demonstrate Active Directory. Active Directory is Microsoft software that is designed for the management of user accounts and their associated properties, such as passwords and permissions, on a large, centralized scale.<br />
+<h1>Preparing AD Infrastructure in Azure</h1>
+This tutorial will detail the creation of two virtual machines. One of the VMs will run Windows Server, and the other will run Windows 11. A domain will be created on the Windows Server VM, which the Windows 11 VM will subsequently join. This will enable the Windows 11 VM to become aware of other user accounts in the domain and thus demonstrate Active Directory. Active Directory is Microsoft software designed to manage user accounts and their associated properties, such as passwords and permissions, at scale. <br />
 
 
 <h2>Environments and Technologies Used</h2>
@@ -21,7 +21,7 @@ This tutorial will detail the creation of two virtual machines. One of the VMs w
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-You will create a Resource Group that will provide the resources for the two VMs that will be created. Next, you will create a Virtual Network that will allow the VMs to communicate with each other, the Internet, and other networks. Now, you are ready to create the two VMs. The first VM (dc-1) will be the Domain Controller and will run on Windows Server 2022 Datacenter, which is designed to provide services to other computers that may join its domain. After creating the Domain Controller VM, set its Network Interface Card Private IP Address to Static so that it won't change. This is because the second VM will be linked to the Domain Controller and a changing Private IP Address will disrupt the connection. Lastly, you will log into dc-1 via Remote Desktop using its public IP Address. Once signed on, you will disable the Windows Defender Firewall so that connections between the two virtual machines won't be disrupted.  
+You will create a Resource Group that will provide the resources for the two VMs that will be created. Next, you will create a Virtual Network that will allow the VMs to communicate with each other, the Internet, and other networks. Now, you are ready to create the two VMs. The first VM (dc-1) will be the Domain Controller and will run Windows Server 2022 Datacenter, designed to provide services to other computers that may join its domain. After creating the Domain Controller VM, set its Network Interface Card Private IP Address to Static so that it won't change. This is because the second VM will be linked to the Domain Controller, and a change in the private IP Address will disrupt the connection. Lastly, you will log into dc-1 via Remote Desktop using its public IP Address. Once signed on, you will disable the Windows Defender Firewall so that connections between the two virtual machines won't be disrupted.  
 </p>
 <p>
 <img src="https://imgur.com/TWUaXK1.png" alt="Resource Group"/>
@@ -56,7 +56,7 @@ You will create a Resource Group that will provide the resources for the two VMs
 <br />
 
 <p>
-The second VM (client-1) will run on Windows 11 Pro, which is designed for a single user. This VM will join the Domain Controller. After creating this vm, set its DNS settings to dc-1's Private IP Address. So, whenever client-1 tries to find either a name or an IP address, it will do so through the Domain Controller. Using Remote Desktop, log into Client-1 using its Public IP Address. Open Windows PowerShell. Send a Ping to dc-1's Private IP Address to test the connectivity between the two VMs. Run ipconfig /all to provide a snapshot of client-1's network configuration. One of the things you will see is dc-1's Private IP Address listed with DNS Servers. 
+The second VM (client-1) will run on Windows 11 Pro, which is designed for a single user. This VM will join the Domain Controller. After creating this VM, set its DNS settings to DC-1's Private IP Address. So, whenever Client-1 tries to find either a name or an IP address, it will do so through the Domain Controller. Using Remote Desktop, log into Client-1 using its Public IP Address. Open Windows PowerShell. Send a Ping to DC-1's Private IP Address to test the connectivity between the two VMs. Run ipconfig /all to provide a snapshot of client-1's network configuration. One thing you will see is DC-1's Private IP Address listed with the DNS Servers. 
 </p>
 <p>
 <img src="https://imgur.com/FBfC9Nm.png" alt="Client-1"/>
