@@ -50,10 +50,10 @@ Use the same Region (South Central US) that you used for the RG and VNet.
 This VM will run Windows Server 2022 Datacenter, which is designed to provide services to other computers that will join its domain. The size must be one that has 2 vcpus and 8 Gib memory (Standard_D2s_v3 - 2 vcpus, 8 Gib memory).
 </p>
 <p>
-
+<img src="https://imgur.com/1CqYtPB.png" alt="Windows Server 2022 Datacenter"/>
 </p>
 <p>
-<img src="https://imgur.com/AFmoWFT.png" alt="DNS Server"/>
+
 </p>
 <p>
 <img src="https://imgur.com/M00YDWk.png" alt="Ping"/>
