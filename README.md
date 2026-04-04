@@ -73,3 +73,20 @@ In the Networking section, select Active-Directory-VNet as the Virtual Network.
 <br />
 
 <p>
+Access the Network Settings of the dc-1 VM and click on Network Interface / IP Configuration Card. 
+</p>
+<p>
+<img src="https://imgur.com/ZXie15E.png" alt="dc-1 Network Settings"/>
+</p>
+<p>
+Click on ipconfig1 and set the Private IP address settings to Static so that it won't change and interfere with connection between the two VMs. 
+</p>
+<p>
+<img src="https://imgur.com/vACl9RN.png" alt="ipconfig1"/>
+</p>
+<p>
+<img src="https://imgur.com/4ggw9hh.png" alt="Static"/>
+</p>
+<br />
+
+<p>
