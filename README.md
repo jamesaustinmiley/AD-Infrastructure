@@ -10,8 +10,8 @@ This tutorial will detail the creation of two virtual machines. One of the VMs w
 
 - Microsoft Azure 
 - Remote Desktop
-- Active Directory Domain Services
-- PowerShell
+- Windows Defender Firewall
+- Microsoft PowerShell
 
 <h2>Operating Systems Used </h2>
 
@@ -21,7 +21,7 @@ This tutorial will detail the creation of two virtual machines. One of the VMs w
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-You will create a Resource Group that will provide the resources for the two VMs that will be created. Next, you will create a Virtual Network that will allow the VMs to communicate with each other, the Internet, and other networks. Now, you are ready to create the two VMs. The first VM (dc-1) will be the Domain Controller and will run Windows Server 2022 Datacenter, designed to provide services to other computers that may join its domain. After creating the Domain Controller VM, set its Network Interface Card Private IP Address to Static so that it won't change. This is because the second VM will be linked to the Domain Controller, and a change in the private IP Address will disrupt the connection. Lastly, you will log into dc-1 via Remote Desktop using its public IP Address. Once signed on, you will disable the Windows Defender Firewall so that connections between the two virtual machines won't be disrupted.  
+ 
 </p>
 <p>
 <img src="https://imgur.com/TWUaXK1.png" alt="Resource Group"/>
