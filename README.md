@@ -125,3 +125,58 @@ Change the Firewall State to Off in the Domain, Private, and Public Profile tabs
 <br />
 
 <p>
+Create a second VM (client-1) that will join the Domain Controller. This will enable the Windows 11 VM to become aware of other user accounts in the domain, thereby demonstrating Active Directory. Use Active-Directory-Lab as the Resource Group. 
+</p>
+<p>
+<img src="https://imgur.com/g2BMZ88.png" alt="VM 2"/>
+</p>
+<p>
+Use South Central US as the Region. 
+</p>
+<p>
+<img src="https://imgur.com/FnsOLqS.png" alt="client-1"/>
+</p>
+<p>
+Client-1 will run on Windows 11 Pro, version 25H2. It's size will be Standard D2s_v3 - 2 vcpus, 8 Gib Memory. 
+</p>
+<p>
+<img src="https://imgur.com/7OB1Bc4.png" alt="Windows 11 Pro"/>
+</p>
+<p>
+Create login credentials that will be used for Remote Desktop access. 
+</p>
+<p>
+<img src="https://imgur.com/I8WuFy3.png" alt="login credentials"/>
+</p>
+<p>
+Check the box concerning a Windows 11 License. 
+</p>
+<p>
+<img src="https://imgur.com/yDpbOJb.png" alt="Windows 11 License"/>
+</p>
+<p>
+Use Active-Directory-VNet as the Virtual Network.
+</p>
+<p>
+<img src="https://imgur.com/letfHDv.png" alt="VN"/>
+</p>
+<br />
+
+<p>
+Access the Network Settings of the client-1 VM and click on the Network Interface / IP Configuration Card. 
+</p>
+<p>
+<img src="https://imgur.com/UCUpnwc.png" alt="client-1 NIIP Card"/>
+</p>
+<p>
+Set client-1's DNS settings to dc-1's Private IP Address by clicking on DNS Servers, selecting Custom, and entering dc-1's Private IP. Restart client-1 to enable the change. 
+</p>
+<p>
+<img src="https://imgur.com/OCbmhMC.png" alt="DNS"/>
+</p>
+<p>
+<img src="https://imgur.com/7DGco6u.png" alt="Restart"/>
+</p>
+<br />
+
+<p>
