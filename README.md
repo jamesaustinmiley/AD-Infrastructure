@@ -180,3 +180,26 @@ Set client-1's DNS settings to dc-1's Private IP Address by clicking on DNS Serv
 <br />
 
 <p>
+Log in to the client-1 VM on Remote Desktop using its Public IP Address. 
+</p>
+<p>
+<img src="https://imgur.com/7BUgBb8.png" alt="client-1 login"/>
+</p>
+<p>
+Run Windows PowerShell as an Administrator.
+</p>
+<p>
+<img src="https://imgur.com/IfSrf8O.png" alt="PowerShell Administrator"/>
+</p>
+<p>
+Ping dc-1's Private IP to show that the two VMs can connect over the network. 
+</p>
+<p>
+<img src="https://imgur.com/wj0EfEA.png" alt="Ping"/>
+</p>
+<p>
+In PowerShell, run the ipconfig /all command to display the client-1 VMs information. Within this list, you should see the dc-1 VMs Private Ip (10.0.0.4) listed opposite DNS Servers. 
+</p>
+<p>
+<img src="https://imgur.com/jPOlBfH.png" alt="ipconfig /all"/>
+</p>
