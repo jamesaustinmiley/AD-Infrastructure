@@ -35,7 +35,7 @@ Create a Virtual Network (Active-Directory-VNet) that will allow the two VMs to 
 <br />
 
 <p>
-Create the VM that will serve as the Domain Controller (dc-1). Use the Resource Group from earlier (Active-Directory-Lab). 
+Create a VM that will serve as the Domain Controller (dc-1). Use the Resource Group from earlier (Active-Directory-Lab). 
 </p>
 <p>
 <img src="https://imgur.com/yad7ztr.png" alt="VM 1"/>
@@ -47,10 +47,10 @@ Use the same Region (South Central US) that you used for the RG and VNet.
 <img src="https://imgur.com/PybeReG.png" alt="dc-1"/>
 </p>
 <p>
-This VM will run Windows Server 2022 Datacenter, which is designed to provide services to other computers that will join its domain. Also, 
+This VM will run Windows Server 2022 Datacenter, which is designed to provide services to other computers that will join its domain. The size must be one that has 2 vcpus and 8 Gib memory (Standard_D2s_v3 - 2 vcpus, 8 Gib memory).
 </p>
 <p>
-<img src="https://imgur.com/yPuOzlo.png" alt="Client-1 NIC"/>
+
 </p>
 <p>
 <img src="https://imgur.com/AFmoWFT.png" alt="DNS Server"/>
