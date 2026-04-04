@@ -90,3 +90,38 @@ Click on ipconfig1 and set the Private IP address settings to Static so that it 
 <br />
 
 <p>
+Connect to dc-1, via Remote Desktop, using the VM's Public IP Address and login credentials. 
+</p>
+<p>
+<img src="https://imgur.com/AYtiYqc.png" alt="Remote Desktop dc-1"/>
+</p>
+<p>
+Right-click the Windows icon and select Run. Type wf.msc to access the Windows Defender Firewall. 
+</p>
+<p>
+<img src="https://imgur.com/fcNkfil.png" alt="wf.msc"/>
+</p>
+<p>
+Click Windows Defender Firewall Properties  
+</p>
+<p>
+<img src="https://imgur.com/TjmDt79.png" alt="Windows Defender Firewall 1"/>
+</p>
+<p>
+Change the Firewall State to Off in the Domain, Private, and Public Profile tabs. Click Apply and OK at the bottom of each screen. This will allow for a clear connection between the two VMs without firewall interference.
+</p>
+<p>
+<img src="https://imgur.com/LoZ7JNm.png" alt="Domain"/>
+</p>
+<p>
+<img src="https://imgur.com/lqiW3YR.png" alt="Private"/>
+</p>
+<p>
+<img src="https://imgur.com/4Dv0ona.png" alt="Public"/>
+</p>
+<p>
+<img src="https://imgur.com/pXoKiRD.png" alt="Windows Defender Firewall 2"/>
+</p>
+<br />
+
+<p>
