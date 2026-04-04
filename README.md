@@ -53,11 +53,23 @@ This VM will run Windows Server 2022 Datacenter, which is designed to provide se
 <img src="https://imgur.com/1CqYtPB.png" alt="Windows Server 2022 Datacenter"/>
 </p>
 <p>
+Enter a Username and Password that will be used for Remote Desktop access.
+</p>
+<p>
+<img src="https://imgur.com/Qngjoht.png" alt="labuser"/>
+</p>
+<p>
+Check the two boxes that concern a Windows Server License. 
+</p>
+<p>
+<img src="https://imgur.com/GWjkHM3.png" alt="Windows Server License"/>
+</p>
+<p>
+In the Networking section, select Active-Directory-VNet as the Virtual Network. 
+</p>
+<p>
+<img src="https://imgur.com/P7s6oAg.png" alt="Networking"/>
+</p>
+<br />
 
-</p>
 <p>
-<img src="https://imgur.com/M00YDWk.png" alt="Ping"/>
-</p>
-<p>
-<img src="https://imgur.com/M9MGT12.png" alt="ipconfig"/>
-</p>
