@@ -18,7 +18,7 @@ This tutorial will detail the creation of two virtual machines. One of the VMs w
 - Windows Server 2022 Datacenter (Domain Controller)
 - Windows 11 Pro (25H2) (Client)
 
-<h2>Deployment and Configuration Steps</h2>
+<h2> Configuration Steps</h2>
 
 <p>
  
