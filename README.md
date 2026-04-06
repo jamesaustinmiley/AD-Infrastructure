@@ -18,7 +18,7 @@ This tutorial will detail the creation of two virtual machines. One of the VMs w
 - Windows Server 2022 Datacenter (Domain Controller)
 - Windows 11 Pro (25H2) (Client)
 
-<h2> Configuration Steps</h2>
+<h2>Steps</h2>
 
 <p>
 Create a Resource Group (Active-Directory-Lab) that will provide resources for the two VMs.  
